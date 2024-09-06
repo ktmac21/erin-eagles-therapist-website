@@ -9,9 +9,9 @@ export default function Home() {
         
         <section className={styles.heroSection}>
           <Image src="/healing.png" alt="Healing" width={600} height={600} />
-          <blockquote className={styles.quote}>
-            "The wound is the place where the Light enters you." - Rumi
-          </blockquote>
+          <div className={styles.quote}>
+            {`"The wound is the place where the Light enters you." - Rumi`}
+          </div>
         </section>
 
         <section className={styles.serviceSection}>
@@ -27,9 +27,9 @@ export default function Home() {
           </div>
         </section>
 
-        <blockquote className={styles.quote}>
-          "The greatest healing therapy is friendship and love." - Hubert H. Humphrey
-        </blockquote>
+        <div className={styles.quote}>
+          {`"The greatest healing therapy is friendship and love." - Hubert H. Humphrey`}
+        </div>
       </main>
     </div>
   );
