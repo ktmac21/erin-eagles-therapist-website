@@ -22,10 +22,10 @@ export default function Home() {
             <h1 className="text-6xl font-light mb-4">Erin Eagles LCSW</h1> {/* Increased font size and margin */}
             <p className="text-3xl mb-2">Licensed Clinical Social Worker</p> {/* Increased font size and margin */}
             <p className="text-3xl mb-12">Therapy Services</p> {/* Increased font size and margin */}
-            <blockquote className="text-2xl italic max-w-3xl"> {/* Increased font size and max-width */}
-              "Your mental health is a priority. Your happiness is essential. Your self-care is a necessity."
+            <p className="text-2xl italic max-w-3xl">
+              &ldquo;Your mental health is a priority. Your happiness is essential. Your self-care is a necessity.&rdquo;
               <footer className="mt-4 text-xl">— Unknown</footer> {/* Increased margin and font size */}
-            </blockquote>
+            </p>
           </div>
         </section>
 
