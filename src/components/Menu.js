@@ -1,27 +1,18 @@
 import Link from 'next/link';
-import Image from 'next/image';
-import styles from './Menu.module.css';
 
 const Menu = () => {
   return (
-    <nav className={styles.nav}>
-      <div className={styles.logoContainer}>
-        <Link href="/" className={styles.logoLink}>
-          <Image
-            src="/possum.png"
-            alt="Logo"
-            width={200}  // Increased size
-            height={200} // Increased size
-            className={styles.logo}
-          />
-        </Link>
-      
-      <ul className={styles.menuList}>
-        <li className={styles.menuItem}><Link href="/about-faye">About Faye</Link></li>
-        <li className={styles.menuItem}><Link href="/about-me">About Me</Link></li>
-        <li className={styles.menuItem}><Link href="/kap-treatment">KAP Treatment</Link></li>
-        <li className={styles.menuItem}><Link href="/services">Services</Link></li>
-      </ul>
+    <nav className="bg-white shadow-md p-4 fixed w-full z-10">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <h1 className="text-4xl font-bold text-gray-600 mb-4 md:mb-0">Erin Eagles LCSW</h1>
+        <ul className="flex flex-wrap justify-center space-x-8">
+          <li><a href="#home" className="text-2xl text-gray-600 hover:text-indigo-600">Home</a></li>
+          <li><a href="#services" className="text-2xl text-gray-600 hover:text-indigo-600">Services</a></li>
+          <li><a href="#contact" className="text-2xl text-gray-600 hover:text-indigo-600">Contact</a></li>
+          <li><a href="#about-me" className="text-2xl text-gray-600 hover:text-indigo-600">About Me</a></li>
+          <li><a href="#about-faye" className="text-2xl text-gray-600 hover:text-indigo-600">About Faye</a></li>
+          <li><a href="#kap-treatment" className="text-2xl text-gray-600 hover:text-indigo-600">KAP Treatment</a></li>
+        </ul>
       </div>
     </nav>
   );
