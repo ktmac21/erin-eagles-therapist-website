@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sacramento: ['Sacramento', 'cursive'],
+      },
       colors: {
         beige: {
           100: '#f5f5dc',
